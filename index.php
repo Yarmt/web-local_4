@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Форма обратной связи</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <!-- <link rel="stylesheet" href="styles/style.css"> -->
 </head>
 <body>
 <header>
     <img src = "logo.webp" width="700" height="700">
 </header>
+
 <form action="home.php" method="post">
         <label for="name">ФИО:</label>
         <input type="text" id="name" name="name" value="<?php if(isset($_POST['name'])) {echo $_POST['name'];} ?>">
