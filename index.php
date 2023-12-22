@@ -11,7 +11,11 @@
 <header>
     <img src = "logo.webp" width="700" height="700">
 </header>
-
+<form method="post" action="home.php">
+    <input type="radio" name="source" value="internet"> Реклама из интернета<br>
+    <input type="radio" name="source" value="friends"> Рассказали друзья<br>
+    <input type="submit" value="Отправить">
+</form>
 <form action="home.php" method="post">
         <label for="name">ФИО:</label>
         <input type="text" id="name" name="name" value="<?php if(isset($_POST['name'])) {echo $_POST['name'];} ?>">
