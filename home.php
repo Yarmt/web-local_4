@@ -11,6 +11,7 @@ if (isset($_POST['name'])) {
     $attachment = isset($_POST['attachment']) ? $_POST['attachment'] : "Файл не прикреплен";
 
     echo "<p>Здравствуйте, $name</p>";
+    echo "<p>Ваш email: $email</p>";
     echo "<p>Текст обращения: $message</p>";
     echo "<p>Название прикрепленного файла: $attachment</p>";
     echo '<a href="index.php?name=' . $name . '&email=' . $email . '&source=' . $source . '">Заполнить снова</a>';
